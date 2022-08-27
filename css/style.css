@@ -7,12 +7,13 @@
 
 /* ----------------------------- Header ----------------------------- */
 
-#header{
+header{
+    background-color: rgba(0,0,0);
     background-image: url(/image/banner.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 70vh;
+    height: 80vh;
 }
 
 .fa-list-ul{
@@ -33,7 +34,6 @@
     color: white;
     font-weight: bolder;
     margin-right: 50px;
-
 }
 
 .navbar-nav li a:hover{
@@ -43,6 +43,16 @@
 /* ----------------------------- Welcome ----------------------------- */
 
 
-.welcome{
+.welcome h1{
+font-size: 50px;
+margin-bottom: 20px;
+}
 
+.welcome h4>span{
+color: red;
+}
+
+
+.welcome h3>span{
+color: yellow;
 }
