@@ -1,0 +1,48 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ----------------------------- Header ----------------------------- */
+
+#header{
+    background-image: url(/image/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 75vh;
+
+}
+.fa-list-ul{
+    color: white;
+}
+
+.navbar-brand{
+    color: orange;
+    font-weight: bolder;
+}
+
+.navbar-brand:hover{
+    color:white;
+}
+
+.navbar-nav li a{
+    float: right;
+    color: white;
+    font-weight: bolder;
+    margin-right: 50px;
+
+}
+
+.navbar-nav li a:hover{
+     color: red;
+}
+
+/* ----------------------------- Welcome ----------------------------- */
+
+
+.welcome{
+
+}
