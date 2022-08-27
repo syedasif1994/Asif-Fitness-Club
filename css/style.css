@@ -8,7 +8,6 @@
 /* ----------------------------- Header ----------------------------- */
 
 header{
-    background-color: rgba(0,0,0);
     background-image: url(/image/banner.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -42,6 +41,9 @@ header{
 
 /* ----------------------------- Welcome ----------------------------- */
 
+.welcome{
+height: 300px;
+}
 
 .welcome h1{
 font-size: 50px;
@@ -55,4 +57,14 @@ color: red;
 
 .welcome h3>span{
 color: yellow;
+}
+
+.btn{
+    border: 1px solid black;
+    font-weight: bolder;
+}
+
+.btn:hover{
+    background-color: lightsalmon;
+    letter-spacing: 2px;
 }
