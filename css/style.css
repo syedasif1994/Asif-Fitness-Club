@@ -6,10 +6,11 @@
 
 /* ----------------------------- Header ----------------------------- */
 
-header {
+    header{
     background-image: url(../image/banner.jpg);
     background-position: center;
     background-repeat: no-repeat;
+    width: 100%;
     background-size: cover;
     height: 80vh;
     margin-bottom: -50px;
@@ -25,24 +26,41 @@ header {
 }
 
 .navbar-brand:hover {
-    color: white;
+    color: red;
 }
 
 .navbar-nav li a {
     float: right;
     color: white;
+    font-size: 1.5em;
     font-weight: bolder;
     margin-right: 50px;
 }
 
 .navbar-nav li a:hover {
     color: red;
+    text-decoration:line-through;
 }
+
+/* ----------------------------- Sticky ----------------------------- */
+
+.sticky{
+    position:fixed;
+    padding: 10px;
+width: 100%;
+background-color: rgba(0,0,0,0.8);
+}
+
+.sticky .navbar-nav li a {
+    padding: 10px;
+}
+
 
 /* ----------------------------- Welcome ----------------------------- */
 
 .welcome {
     padding: 30px;
+    height: 1000px;
     background-color: white;
 }
 
@@ -78,4 +96,78 @@ header {
 .btn:hover {
     background-color: lightsalmon;
     letter-spacing: 2px;
+}
+
+
+
+/*------------------------------------------------------------------------ */
+/*------------------------------------------------------------------------ */
+/*--------------------------------- Responsive---------------------------- */
+/*------------------------------------------------------------------------ */
+/*------------------------------------------------------------------------ */
+
+
+/*-------------- Responsive 320x480 ------------- */
+
+@media (min-width:320px) and (max-width:480px) {
+
+}
+
+
+/*-------------- Responsive 481x768 ------------- */
+
+@media (min-width:481px) and (max-width:768px) {
+ 
+/* ----------------------------- Header ----------------------------- */
+
+header {
+    height: 70vh;
+    margin-bottom: -80px;
+}
+
+
+.navbar-brand {
+font-size: 1em;
+}
+
+
+.navbar-nav li a {
+    font-size: 1em;
+}
+
+
+/* ----------------------------- Welcome ----------------------------- */
+
+.welcome {
+    padding: 30px;
+}
+
+.welcome h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+
+.btn {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.btn:hover {
+    letter-spacing: 2px;
+}
+
+}
+
+
+/*-------------- Responsive 769x1024 ------------- */
+
+@media (min-width:769px) and (max-width:1024px) {
+
+}
+
+/*-------------- Responsive 1025x1280 ------------- */
+
+@media (min-width:1025px) and (max-width:1280px) {
+
 }
