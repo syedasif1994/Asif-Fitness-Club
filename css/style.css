@@ -1,5 +1,4 @@
-
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -7,64 +6,76 @@
 
 /* ----------------------------- Header ----------------------------- */
 
-header{
-    background-image: url(/image/banner.jpg);
+header {
+    background-image: url(../image/banner.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 80vh;
+    margin-bottom: -50px;
 }
 
-.fa-list-ul{
+.fa-list-ul {
     color: white;
 }
 
-.navbar-brand{
+.navbar-brand {
     color: orange;
     font-weight: bolder;
 }
 
-.navbar-brand:hover{
-    color:white;
+.navbar-brand:hover {
+    color: white;
 }
 
-.navbar-nav li a{
+.navbar-nav li a {
     float: right;
     color: white;
     font-weight: bolder;
     margin-right: 50px;
 }
 
-.navbar-nav li a:hover{
-     color: red;
+.navbar-nav li a:hover {
+    color: red;
 }
 
 /* ----------------------------- Welcome ----------------------------- */
 
-.welcome{
-height: 300px;
+.welcome {
+    padding: 30px;
+    background-color: white;
 }
 
-.welcome h1{
-font-size: 50px;
-margin-bottom: 20px;
+.welcome h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
 }
 
-.welcome h4>span{
-color: red;
+.welcome h1>span {
+    color: red;
 }
 
-
-.welcome h3>span{
-color: yellow;
-}
-
-.btn{
-    border: 1px solid black;
+.welcome h4 {
     font-weight: bolder;
 }
 
-.btn:hover{
+.welcome h4>span {
+    color: blue;
+}
+
+
+.welcome h3>span {
+    color: yellow;
+}
+
+.btn {
+    border: 1px solid black;
+    font-weight: bolder;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.btn:hover {
     background-color: lightsalmon;
     letter-spacing: 2px;
 }
