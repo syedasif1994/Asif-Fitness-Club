@@ -3,12 +3,6 @@
     padding: 0;
 }
 
-
-section {
-    height: 50vh;
-}
-
-
 /* ----------------------------- Header ----------------------------- */
 
 header {
@@ -27,8 +21,9 @@ header {
 
 .navbar-brand {
     color: orange;
-    font-size: 1.5em;
+    font-size: 1.4em;
     font-weight: bolder;
+    margin-left: 30px;
 }
 
 .navbar-brand:hover {
@@ -68,6 +63,15 @@ header {
     width: 80%;
     margin: auto;
     background-color: white;
+    box-shadow: inset -1px -1px 2px rgba(0, 0, 0, 0.5),
+    2px 2px 5px rgba(0, 0, 0, 0.5);
+transition: 0.5s;
+}
+
+.welcome:hover {
+    transform: translateY(-50px);
+    box-shadow: inset -1px -1px 2px rgba(0, 0, 0, 0.5),
+        -2px -2px 10px rgba(0, 0, 0, 0.5);
 }
 
 .welcome h1 {
@@ -118,14 +122,52 @@ header {
 
 /* ----------------------------- About us ----------------------------- */
 
+#about{
+    margin: 30px;
+}
+
+#about .row .col-sm-6{
+    padding: 10px 10px;
+}
+
+#about .row .col-sm-6 img{
+    width: 17em;
+}
+
+#about h3{
+    margin: 20px auto;
+}
 
 /* ----------------------------- Service ----------------------------- */
 
+#service{
+    padding: 30px;
+    background-color: aqua;
+}
+
+.box{
+    display: flex;
+}
+
+.box-body{
+    display: flex;
+    flex: 0.25;
+    flex-direction: column;
+   justify-content: center;
+    align-items: center; 
+}
+
+#service .box-img img{
+    width: 40px;
+    height: 30px;
+}
+
+.box-info{
+    text-align: center;
+}
+
 
 /* ----------------------------- Feature ----------------------------- */
-
-
-/* ----------------------------- Review ----------------------------- */
 
 
 /* ----------------------------- Contact ----------------------------- */
@@ -137,7 +179,7 @@ header {
 
 /*------------------------------------------------------------------------ */
 /*------------------------------------------------------------------------ */
-/*--------------------------------- Responsive---------------------------- */
+/*--------------------------------- Responsive ---------------------------- */
 /*------------------------------------------------------------------------ */
 /*------------------------------------------------------------------------ */
 
@@ -169,7 +211,7 @@ header {
 /* ----------------------------- Sticky ----------------------------- */
 
 .sticky {
-    padding: 5px;
+    padding: 10px;
 }
 
 .sticky .navbar-nav li a {
@@ -201,10 +243,51 @@ header {
     font-size: 0.8em;
 }
 
+/* ----------------------------- About us ----------------------------- */
 
-
+#about{
+    padding: 20px;
 }
 
+#about .row .col-sm-6{
+    padding: 5px 5px;
+}
+
+#about .row .col-sm-6 img{
+    width: 10em;
+}
+
+#about h3{
+    font-size: 15px;
+}
+
+#about p{
+    font-size: 10px;
+}
+
+/* ----------------------------- Service ----------------------------- */
+#service{
+    margin: 20px;
+}
+
+.box{
+    flex-direction: column;
+}
+
+.box-body{
+    flex: 1;   
+}
+
+#service .box-img img{
+    width: 40px;
+    height: 30px;
+}
+
+.box-info{
+    text-align: center;
+}
+
+}
 
 
 /*-------------- Responsive 481x768 ------------- */
@@ -271,7 +354,60 @@ header {
 
 @media (min-width:769px) and (max-width:1024px) {
 
+    header {
+        height: 80vh;
+        margin-bottom: -100px;
+    }
+    
+    
+    .navbar-brand {
+        font-size: 1.2em;
+        margin-left: 20px;
+    }
+    
+    
+    .navbar-nav li a {
+        font-size: 1em;
+        margin-right: 20px;
+    }
+    
+    /* ----------------------------- Sticky ----------------------------- */
+    
+    .sticky {
+        padding: 10px;
+    }
+    
+    .sticky .navbar-nav li a {
+        padding: 10px;
+    }
+    
+    .sticky .navbar-nav li a {
+        font-size: 1.2em;
+    }
+    
+    
+    /* ----------------------------- Welcome ----------------------------- */
+    
+    .welcome {
+        padding: 25px;
+        width: 95%;
+    }
+    
+    .welcome h1 {
+        font-size: 2.8em;
+    }
+    
+    .welcome h3 {
+        font-size: 2.2em;
+    }
+    
+    .welcome h4 {
+        font-size: 1.7em;
+    }
+    
+    
 }
+
 
 /*-------------- Responsive 1025x1280 ------------- */
 
