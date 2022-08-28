@@ -4,16 +4,21 @@
 }
 
 
+section {
+    height: 50vh;
+}
+
+
 /* ----------------------------- Header ----------------------------- */
 
-    header{
+header {
     background-image: url(../image/banner.jpg);
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
     background-size: cover;
     height: 80vh;
-    margin-bottom: -50px;
+    margin-bottom: -80px;
 }
 
 .fa-list-ul {
@@ -22,6 +27,7 @@
 
 .navbar-brand {
     color: orange;
+    font-size: 1.5em;
     font-weight: bolder;
 }
 
@@ -32,50 +38,62 @@
 .navbar-nav li a {
     float: right;
     color: white;
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-weight: bolder;
     margin-right: 50px;
 }
 
 .navbar-nav li a:hover {
     color: red;
-    text-decoration:line-through;
+    text-decoration: line-through;
 }
 
 /* ----------------------------- Sticky ----------------------------- */
 
-.sticky{
-    position:fixed;
+.sticky {
+    position: fixed;
     padding: 10px;
-width: 100%;
-background-color: rgba(0,0,0,0.8);
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .sticky .navbar-nav li a {
     padding: 10px;
 }
 
-
 /* ----------------------------- Welcome ----------------------------- */
 
 .welcome {
     padding: 30px;
-    height: 1000px;
+    width: 80%;
+    margin: auto;
     background-color: white;
 }
 
 .welcome h1 {
-    font-size: 50px;
+    font-size: 3.5em;
     margin-bottom: 20px;
 }
+
 
 .welcome h1>span {
     color: red;
 }
 
-.welcome h4 {
+
+.welcome h3 {
+    font-size: 2.5em;
     font-weight: bolder;
+    margin-top: 15px;
 }
+
+.welcome h4 {
+    font-size: 1.5em;
+    font-weight: bolder;
+    margin-top: 15px;
+}
+
+
 
 .welcome h4>span {
     color: blue;
@@ -87,16 +105,33 @@ background-color: rgba(0,0,0,0.8);
 }
 
 .btn {
+    font-size: 1em;
     border: 1px solid black;
     font-weight: bolder;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-top: 15px;
 }
 
 .btn:hover {
     background-color: lightsalmon;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
+
+/* ----------------------------- About us ----------------------------- */
+
+
+/* ----------------------------- Service ----------------------------- */
+
+
+/* ----------------------------- Feature ----------------------------- */
+
+
+/* ----------------------------- Review ----------------------------- */
+
+
+/* ----------------------------- Contact ----------------------------- */
+
+
+/* ----------------------------- Footer ----------------------------- */
 
 
 
@@ -111,51 +146,123 @@ background-color: rgba(0,0,0,0.8);
 
 @media (min-width:320px) and (max-width:480px) {
 
-}
+ /* ----------------------------- Header ----------------------------- */
 
-
-/*-------------- Responsive 481x768 ------------- */
-
-@media (min-width:481px) and (max-width:768px) {
- 
-/* ----------------------------- Header ----------------------------- */
-
-header {
+ header {
+    background-image: url(../image/banner-mob.jpg);
     height: 70vh;
-    margin-bottom: -80px;
+    margin-bottom: -100px;
 }
 
 
 .navbar-brand {
-font-size: 1em;
+    font-size: 0.8em;
+    margin-left: 10px;
 }
 
 
 .navbar-nav li a {
-    font-size: 1em;
+    font-size: 0.8em;
+    margin-right: 20px;
+}
+
+/* ----------------------------- Sticky ----------------------------- */
+
+.sticky {
+    padding: 5px;
+}
+
+.sticky .navbar-nav li a {
+    padding: 5px;
+}
+
+.sticky .navbar-nav li a {
+    font-size: 0.9em;
 }
 
 
 /* ----------------------------- Welcome ----------------------------- */
 
 .welcome {
-    padding: 30px;
+    padding: 20px;
+    width: 90%;
 }
 
 .welcome h1 {
-    font-size: 50px;
-    margin-bottom: 20px;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.welcome h3 {
+    font-size: 1em;
+}
+
+.welcome h4 {
+    font-size: 0.8em;
 }
 
 
-.btn {
-    margin-top: 10px;
-    margin-bottom: 20px;
+
 }
 
-.btn:hover {
-    letter-spacing: 2px;
-}
+
+
+/*-------------- Responsive 481x768 ------------- */
+
+@media (min-width:481px) and (max-width:768px) {
+
+    header {
+        height: 70vh;
+        margin-bottom: -80px;
+    }
+    
+    
+    .navbar-brand {
+        font-size: 1em;
+        margin-left: 20px;
+    }
+    
+    
+    .navbar-nav li a {
+        font-size: 0.9em;
+        margin-right: 20px;
+    }
+    
+    /* ----------------------------- Sticky ----------------------------- */
+    
+    .sticky {
+        padding: 10px;
+    }
+    
+    .sticky .navbar-nav li a {
+        padding: 10px;
+    }
+    
+    .sticky .navbar-nav li a {
+        font-size: 1em;
+    }
+    
+    
+    /* ----------------------------- Welcome ----------------------------- */
+    
+    .welcome {
+        padding: 20px;
+        width: 100%;
+    }
+    
+    .welcome h1 {
+        font-size: 2.5em;
+        margin-bottom: 15px;
+    }
+    
+    .welcome h3 {
+        font-size: 2em;
+    }
+    
+    .welcome h4 {
+        font-size: 1.5em;
+    }
+    
 
 }
 
