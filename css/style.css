@@ -262,7 +262,8 @@ header {
 
 /* ----------------------------- Contact ----------------------------- */
 #contact {
-    padding: 20px;
+    padding: 10px;
+    color: black;
 }
 
 #contact h1 {
@@ -272,21 +273,58 @@ header {
     color: brown;
 }
 
+#contact .container{
+    background-color: rgba(0, 255, 255, 0.5);
+    padding: 30px;
+}
+
+.contact-box{
+    display: flex;
+    margin-bottom: 20px;
+    border-bottom: 1px solid brown;
+}
+
+.contact-right{
+    display: flex;
+    flex-direction: column;
+    flex:0.5;
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info .fa{
+    margin-top: 30px;
+}
+
+.social-media .fa{
+    margin-top: 30px;
+}
+
+.social-media .fa{
+    font-size: 20px;
+    padding: 10px;
+}
+
+.contact-left{
+    display: flex;
+       flex:0.5;
+       margin: 10px;
+}
+
 /* ----------------------------- Footer ----------------------------- */
 
 
 
-footer {
+.footer {
     font-family: 'Roboto Slab', serif;
-    padding: 10px;
     font-size: 1em;
-    background-color: red;
     color: black;
     font-weight: bolder;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
 }
 
 
@@ -416,12 +454,64 @@ footer {
         font-size: 12px;
     }
 
-/* ----------------------------- Feature ----------------------------- */
+/* ----------------------------- Contact ----------------------------- */
 
+#contact {
+    padding: 2px;
+}
 
-    footer {
-        font-size: 0.7em;
-    }
+#contact .container{
+    padding: 10px;
+    background-color:white;
+}
+
+.contact-box{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.contact-right{
+    display: flex;
+    flex-direction: column;
+    flex:0.5;
+    margin-bottom: 10px;
+    border-bottom: 1px solid brown;
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info p{
+font-size: 15px;
+}
+
+.contact-info .fa{
+    margin-top: 20px;
+}
+
+.social-media .fa{
+    margin-top: 20px;
+}
+
+.social-media .fa{
+    font-size: 15px;
+    padding: 5px;
+}
+
+.contact-left{
+    display: flex;
+       flex:0.5;
+       margin-bottom: 10px;
+}
+
+/* ----------------------------- Footer ----------------------------- */
+
+.footer {
+    font-size: 0.7em;  
+}
 
 
 }
@@ -537,6 +627,59 @@ footer {
     font-size: 15px;
 }
 
+/* ----------------------------- Contact ----------------------------- */
+
+#contact {
+    padding: 5px;
+}
+
+#contact .container{
+    padding: 10px;
+}
+
+.contact-box{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.contact-right{
+    display: flex;
+    flex-direction: column;
+    flex:0.5;
+    margin-bottom: 10px;
+    border-bottom: 1px solid brown;
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info .fa{
+    margin-top: 20px;
+}
+
+.social-media .fa{
+    margin-top: 20px;
+}
+
+.social-media .fa{
+    font-size: 15px;
+    padding: 5px;
+}
+
+.contact-left{
+    display: flex;
+       flex:0.5;
+       margin-bottom: 10px;
+}
+
+/* ----------------------------- Footer ----------------------------- */
+
+.footer {
+    font-size: 1em;  
+}
 
 }
 
