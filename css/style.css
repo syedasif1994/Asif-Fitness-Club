@@ -267,6 +267,20 @@ header {
 
 
 
+footer {
+    font-family: 'Roboto Slab', serif;
+    padding: 10px;
+    font-size: 1em;
+    background-color: red;
+    color: black;
+    font-weight: bolder;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 /*------------------------------------------------------------------------ */
 /*------------------------------------------------------------------------ */
 /*--------------------------------- Responsive ---------------------------- */
