@@ -65,8 +65,8 @@ header {
     margin: auto;
     background-color: white;
     box-shadow: inset -1px -1px 2px rgba(0, 0, 0, 0.5),
-    2px 2px 5px rgba(0, 0, 0, 0.5);
-transition: 0.5s;
+        2px 2px 5px rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
 }
 
 .welcome:hover {
@@ -120,26 +120,26 @@ transition: 0.5s;
 
 /* ----------------------------- About us ----------------------------- */
 
-#about{
+#about {
     margin: 30px;
 }
 
-#about h1{
+#about h1 {
     margin: 10px;
     text-decoration: underline;
     font-weight: bolder;
     color: brown;
 }
 
-#about .row .col-sm-6{
+#about .row .col-sm-6 {
     padding: 10px 10px;
 }
 
-#about .row .col-sm-6 img{
+#about .row .col-sm-6 img {
     width: 17em;
 }
 
-#about h3{
+#about h3 {
     margin: 20px auto;
     font-weight: bolder;
 }
@@ -147,11 +147,11 @@ transition: 0.5s;
 /* ----------------------------- Service ----------------------------- */
 
 
-#service{
+#service {
     padding: 20px;
 }
 
-#service h1{
+#service h1 {
     text-align: center;
     margin: 20px;
     text-decoration: underline;
@@ -159,56 +159,104 @@ transition: 0.5s;
     color: brown;
 }
 
-#service .container{
+#service .container {
     background-color: aqua;
     padding: 20px;
 }
 
-.box{
+#service .box {
     display: flex;
 }
 
-.box-body{
+#service .box-body {
     display: flex;
     flex: 0.25;
     flex-direction: column;
-   justify-content: center;
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
 }
 
-#service .box-img img{
+#service .box-img img {
     width: 40px;
     height: 30px;
 }
 
-.box-info{
+#service .box-info {
     text-align: center;
     padding: 10px;
 }
 
-.box-info h4{
+#service .box-info h4 {
     font-weight: bolder;
 }
 
 /* ----------------------------- Feature ----------------------------- */
-#feature{
-    padding: 20px;
+
+#feature {
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
-#feature h1{
-    text-align: center;
+#feature h1 {
     margin: 20px;
+    text-align: center;
     text-decoration: underline;
     font-weight: bolder;
     color: brown;
 }
 
-/* ----------------------------- Contact ----------------------------- */
-#contact{
+#feature .content {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../image/banner-btm.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
     padding: 20px;
 }
 
-#contact h1{ 
+.feature-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-left {
+    display: flex;
+}
+
+.feature-left img{
+    width: 25em;
+}
+
+.feature-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.feature-body {
+    display: flex;
+    align-items: center;
+}
+
+.box-left {
+    padding: 20px;
+}
+
+.box-left .fa {
+    font-size: 30px;
+}
+
+
+.box-right h4 {
+    font-weight: bolder;
+}
+
+/* ----------------------------- Contact ----------------------------- */
+#contact {
+    padding: 20px;
+}
+
+#contact h1 {
     margin: 20px;
     text-decoration: underline;
     font-weight: bolder;
@@ -230,104 +278,121 @@ transition: 0.5s;
 
 @media (min-width:320px) and (max-width:480px) {
 
- /* ----------------------------- Header ----------------------------- */
+    /* ----------------------------- Header ----------------------------- */
 
- header {
-    background-image: url(../image/banner-mob.jpg);
-    height: 60vh;
-    margin-bottom: -100px;
-}
-
-
-.navbar-brand {
-    font-size: 0.8em;
-    margin-left: 10px;
-}
+    header {
+        background-image: url(../image/banner-mob.jpg);
+        height: 60vh;
+        margin-bottom: -100px;
+    }
 
 
-.navbar-nav li a {
-    font-size: 0.8em;
-    margin-right: 20px;
-}
-
-/* ----------------------------- Sticky ----------------------------- */
-
-.sticky {
-    padding: 10px;
-}
-
-.sticky .navbar-nav li a {
-    padding: 5px;
-}
-
-.sticky .navbar-nav li a {
-    font-size: 0.9em;
-}
+    .navbar-brand {
+        font-size: 0.8em;
+        margin-left: 10px;
+    }
 
 
-/* ----------------------------- Welcome ----------------------------- */
+    .navbar-nav li a {
+        font-size: 0.8em;
+        margin-right: 20px;
+    }
 
-.welcome {
-    padding: 20px;
-    width: 100%;
-}
+    /* ----------------------------- Sticky ----------------------------- */
 
-.welcome:hover {
-    transform: translateY(-30px);
-}
+    .sticky {
+        padding: 10px;
+    }
 
-.welcome h1 {
-    font-size: 1.3em;
-    margin-bottom: 15px;
-}
+    .sticky .navbar-nav li a {
+        padding: 5px;
+    }
 
-.welcome h3 {
-    font-size: 1em;
-}
+    .sticky .navbar-nav li a {
+        font-size: 0.9em;
+    }
 
-.welcome h4 {
-    font-size: 0.8em;
-}
 
-/* ----------------------------- About us ----------------------------- */
+    /* ----------------------------- Welcome ----------------------------- */
 
-#about{
-    padding: 10px;
-}
+    .welcome {
+        padding: 20px;
+        width: 100%;
+    }
 
-#about .row .col-sm-6{
-    padding: 5px 5px;
-}
+    .welcome:hover {
+        transform: translateY(-30px);
+    }
 
-#about .row .col-sm-6 img{
-    width: 15em;
-}
+    .welcome h1 {
+        font-size: 1.3em;
+        margin-bottom: 15px;
+    }
 
-#about h3{
-    font-size: 15px;
-}
+    .welcome h3 {
+        font-size: 1em;
+    }
 
-#about p{
-    font-size: 12px;
-}
+    .welcome h4 {
+        font-size: 0.8em;
+    }
 
-/* ----------------------------- Service ----------------------------- */
-#service{
-    margin: 20px;
-}
+    /* ----------------------------- About us ----------------------------- */
 
-.box{
-    flex-direction: column;
-}
+    #about {
+        padding: 10px;
+    }
 
-.box-body{
-    flex: 1;   
-}
+    #about .row .col-sm-6 {
+        padding: 5px 5px;
+    }
 
-#service .box-img img{
-    width: 40px;
-    height: 30px;
-}
+    #about .row .col-sm-6 img {
+        width: 15em;
+    }
+
+    #about h3 {
+        font-size: 15px;
+    }
+
+    #about p {
+        font-size: 12px;
+    }
+
+    /* ----------------------------- Service ----------------------------- */
+    #service {
+        margin: 20px;
+    }
+
+    #service .box {
+        flex-direction: column;
+    }
+
+    #service .box-body {
+        flex: 1;
+    }
+
+    #service .box-img img {
+        width: 40px;
+        height: 30px;
+    }
+
+ /* ----------------------------- Feature ----------------------------- */
+
+
+    .box-left .fa {
+        font-size: 20px;
+    }
+    
+    .box-right h4 {
+        font-size: 15px;
+        width: 150px;
+    }
+
+    .box-right p {
+        font-size: 12px;
+    }
+
 
 }
 
@@ -340,92 +405,106 @@ transition: 0.5s;
         height: 70vh;
         margin-bottom: -80px;
     }
-    
-    
+
+
     .navbar-brand {
         font-size: 1em;
         margin-left: 20px;
     }
-    
-    
+
+
     .navbar-nav li a {
         font-size: 0.9em;
         margin-right: 20px;
     }
-    
+
     /* ----------------------------- Sticky ----------------------------- */
-    
+
     .sticky {
         padding: 10px;
     }
-    
+
     .sticky .navbar-nav li a {
         padding: 10px;
     }
-    
+
     .sticky .navbar-nav li a {
         font-size: 1em;
     }
-    
-    
+
+
     /* ----------------------------- Welcome ----------------------------- */
-    
+
     .welcome {
         padding: 20px;
         width: 90%;
     }
-    
+
     .welcome h1 {
         font-size: 2em;
         margin-bottom: 15px;
     }
-    
+
     .welcome h3 {
         font-size: 1.8em;
     }
-    
+
     .welcome h4 {
         font-size: 1em;
     }
-    
-/* ----------------------------- About us ----------------------------- */
-#about{
-    padding: 15px;
-}
 
-#about .row .col-sm-6{
-    padding: 2px;
-}
+    /* ----------------------------- About us ----------------------------- */
+    #about {
+        padding: 15px;
+    }
 
-#about .row .col-sm-6 img{
-    width: 15em;
-}
+    #about .row .col-sm-6 {
+        padding: 2px;
+    }
 
-#about h3{
+    #about .row .col-sm-6 img {
+        width: 15em;
+    }
+
+    #about h3 {
+        font-size: 20px;
+        font-weight: bolder;
+    }
+
+    #about p {
+        font-size: 15px;
+    }
+
+    /* ----------------------------- Service ----------------------------- */
+    #service {
+        margin: 20px;
+    }
+
+    #service .box {
+        flex-direction: column;
+    }
+
+    #service .box-body {
+        flex: 0.25;
+    }
+
+    #service .box-img img {
+        width: 40px;
+        height: 30px;
+    }
+ /* ----------------------------- Feature ----------------------------- */
+
+ .box-left .fa {
     font-size: 20px;
-    font-weight: bolder;
 }
 
-#about p{
+.box-right h4 {
+    font-size: 18px;
+    width: 170px;
+}
+
+.box-right p {
     font-size: 15px;
-}
-
-/* ----------------------------- Service ----------------------------- */
-#service{
-    margin: 20px;
-}
-
-.box{
-    flex-direction: column;
-}
-
-.box-body{
-    flex: 0.25;   
-}
-
-#service .box-img img{
-    width: 40px;
-    height: 30px;
 }
 
 
@@ -440,59 +519,57 @@ transition: 0.5s;
         height: 80vh;
         margin-bottom: -100px;
     }
-    
-    
+
+
     .navbar-brand {
         font-size: 1.2em;
         margin-left: 20px;
     }
-    
-    
+
+
     .navbar-nav li a {
         font-size: 1em;
         margin-right: 20px;
     }
-    
+
     /* ----------------------------- Sticky ----------------------------- */
-    
+
     .sticky {
         padding: 10px;
     }
-    
+
     .sticky .navbar-nav li a {
         padding: 10px;
     }
-    
+
     .sticky .navbar-nav li a {
         font-size: 1.2em;
     }
-    
-    
+
+
     /* ----------------------------- Welcome ----------------------------- */
-    
+
     .welcome {
         padding: 25px;
         width: 95%;
     }
-    
+
     .welcome h1 {
         font-size: 2.8em;
     }
-    
+
     .welcome h3 {
         font-size: 2.2em;
     }
-    
+
     .welcome h4 {
         font-size: 1.7em;
     }
-    
-    
+
+
 }
 
 
 /*-------------- Responsive 1025x1280 ------------- */
 
-@media (min-width:1025px) and (max-width:1280px) {
-
-}
+@media (min-width:1025px) and (max-width:1280px) {}
