@@ -78,11 +78,13 @@ header {
 .welcome h1 {
     font-size: 3.5em;
     margin-bottom: 20px;
+    font-weight: bolder;
 }
 
 
 .welcome h1>span {
-    color: red;
+    color: gray;
+    
 }
 
 
@@ -103,7 +105,7 @@ header {
 }
 
 .welcome h3>span {
-    color: yellow;
+    color: red;
 }
 
 .btn {
@@ -111,11 +113,18 @@ header {
     border: 1px solid black;
     font-weight: bolder;
     margin-top: 15px;
+   
+}
+
+.btn a{
+    text-decoration: none;
+    color: black;
 }
 
 .btn:hover {
     background-color: lightsalmon;
     letter-spacing: 1px;
+
 }
 
 /* ----------------------------- About us ----------------------------- */
@@ -339,16 +348,16 @@ footer {
     }
 
     .welcome h1 {
-        font-size: 1.3em;
+        font-size: 1.5em;
         margin-bottom: 15px;
     }
 
     .welcome h3 {
-        font-size: 1em;
+        font-size: 1.2em;
     }
 
     .welcome h4 {
-        font-size: 0.8em;
+        font-size: 1em;
     }
 
     /* ----------------------------- About us ----------------------------- */
@@ -462,7 +471,7 @@ footer {
     }
 
     .welcome h1 {
-        font-size: 2em;
+        font-size: 2.2em;
         margin-bottom: 15px;
     }
 
@@ -471,7 +480,7 @@ footer {
     }
 
     .welcome h4 {
-        font-size: 1em;
+        font-size: 1.3em;
     }
 
     /* ----------------------------- About us ----------------------------- */
@@ -576,15 +585,15 @@ footer {
     }
 
     .welcome h1 {
-        font-size: 2.8em;
+        font-size: 3em;
     }
 
     .welcome h3 {
-        font-size: 2.2em;
+        font-size: 2.5em;
     }
 
     .welcome h4 {
-        font-size: 1.7em;
+        font-size: 2em;
     }
 
 
